@@ -9,16 +9,15 @@ public class Venolas4 {
         System.out.print("Digite seu usuario:");
         String name = sc.nextLine();  
         System.out.print("Digite a senha:");
-        String senha = ("1234");
-        sc.nextLine();
+        String s = sc.nextLine();
         
         //Atribui que o "name" é admin e somente admin.        
-        if (!name.equals("admin")){
-            System.out.print("Falha na segurança");
+        if (name.equals("admin") && s.equals("1234")){
+            System.out.print("Acesso concedido");
         }
         //se a senha não for ("1234").
         else {       
-            System.out.print("Acesso concedido");
+            System.out.print("Acesso negado");
         }
         
     }
